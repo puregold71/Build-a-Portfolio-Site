@@ -1,0 +1,458 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Questrial', sans-serif;
+  margin: 0 25px;
+}
+
+/* Header */
+header {
+  display: flex;
+  width: 75%;
+  max-width: 1000px;
+  margin-left: 20%;
+  height: 20vh;
+  justify-content: space-between;
+  border-bottom: 4px solid #0033cc;
+}
+
+.logo {
+  align-self: center;
+  height: 100px;
+  width: 100px;
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  border-radius: 50px;
+}
+
+#logo-icon {
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg)
+  }
+  33% {
+    transform: rotate(10deg)
+  }
+  66% {
+    transform: rotate(-10deg)
+  }
+}
+
+.content-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 10px;
+}
+
+.name {
+  font-size: 4em;
+  transform: scale(1, 0.8);
+  font-weight: 100;
+  text-transform: uppercase;
+  align-self: flex-end;
+  opacity: 0.5;
+}
+
+.title {
+  font-size: 1.1em;
+  text-transform: uppercase;
+  align-self: flex-end;
+  letter-spacing: 1px;
+  opacity: 0.75;
+}
+
+
+
+/* Main Section */
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-right: 40px;
+  order: 1;
+}
+
+.left {
+  flex-basis: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right {
+  flex-basis: 75%;
+  margin: 30px 0;
+  height: 400px;
+  max-width: 1000px;
+  background: #0033cc url("../img/design-def.jpeg") center top;
+  background-size: cover;
+}
+
+h3 {
+  margin: 5px 0 15px 0;
+  font-size: 22px;
+  opacity: 0.5;
+}
+
+.box-div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 5px 0 10px 0
+}
+
+.blue-box {
+  width: 75px;
+  height: 75px;
+  background-color: #0033cc;
+}
+
+.lightblue-box {
+  width: 75px;
+  height: 75px;
+  background-color: #02b3e4;
+}
+
+.green-box {
+  width: 75px;
+  height: 75px;
+  background-color: #008000;
+}
+
+.work {
+  display: flex;
+  flex-wrap: wrap;
+  width: 75%;
+  max-width: 1000px;
+  margin-left: 20%;
+  margin-bottom: 5%;
+  justify-content: flex-start;
+}
+
+.featured-work {
+  margin: 10px 0 10px 20%;
+  opacity: 0.5;
+  font-size: 33px;
+  text-indent: 10px;
+  letter-spacing: 1px;
+}
+
+.project {
+  flex: 1;
+  text-align: center;
+}
+
+#middle {
+  margin: 0 10px;
+}
+
+.project-link {
+  font-size: 14px;
+}
+
+.project-title {
+  font-size: 2em;
+  font-weight: 100;
+  letter-spacing: 4px;
+  opacity: 0.8;
+  text-transform: uppercase;
+  margin: 10px;
+}
+
+.project-1 {
+  height: 200px;
+  width: 100%;
+  background: #0033cc url("../img/geo.jpeg") center;
+  background-size: cover;
+}
+
+.project-2 {
+  height: 200px;
+  width: 100%;
+  background: #0033cc url("../img/water.jpeg") center;
+  background-size: cover;
+}
+
+.project-3 {
+  height: 200px;
+  width: 100%;
+  background: #0033cc url("../img/voku.jpeg") center;
+  background-size: cover;
+}
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
+  max-width: 1000px;
+  margin-left: 20%;
+  height: 30vh;
+}
+
+#profile {
+  height: 230px;
+  align-self: center;
+  margin: 0 40px 20px 0;
+}
+
+.about-me {
+  margin: 30px 20px;
+  word-wrap: break-word;
+  width: 1000px;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  width: 75%;
+  max-width: 1000px;
+  margin-left: 20%;
+  height: 50px;
+  justify-content: space-between;
+  border-top: 2px solid #0033cc;
+}
+
+i {
+  font-size: 32px;
+}
+
+.fa-envelope,
+.fab {
+  color: black;
+  opacity: 0.5;
+}
+
+.fa-envelope {
+  font-size: 28px;
+}
+
+.fa-envelope:hover,
+.fab:hover {
+  color: #0033cc;
+}
+
+.footer-font {
+  font-size: 20px;
+  font-family: 'Questrial', sans-serif;
+}
+
+.contact,
+.social {
+  align-self: flex-end;
+  margin-bottom: 10px;
+}
+
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .featured-work {
+    font-size: 26px;
+  }
+  .project-title {
+    font-size: 1.5em;
+    letter-spacing: 0
+  }
+}
+
+@media screen and (max-width: 930px) {
+  .right {
+    height: 300px;
+  }
+  .project-title {
+    margin-bottom: 2px;
+  }
+  .project-link {
+    margin-bottom: 10px;
+  }
+  .featured-work {
+    text-indent: 0;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .work {
+    justify-content: flex-start;
+  }
+  .project {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .name {
+    font-size: 3em;
+    letter-spacing: 0;
+  }
+  .left {
+    flex-basis: 15%;
+  }
+  .right {
+    margin-left: 5%;
+  }
+  .logo {
+    width: 75px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  html {
+    margin: 0 0 0 10px;
+  }
+  header,
+  footer {
+    margin-left: 10%;
+  }
+  .left {
+    flex-direction: row;
+    order: 2;
+    margin-left: 10%;
+    flex-basis: 75%;
+    justify-content: space-between;
+  }
+  .right {
+    order: 1;
+    margin-left: 10%;
+    background-position: center;
+  }
+  .featured-work,
+  .work {
+    margin-left: 10%;
+  }
+
+  .about {
+    margin-left: 10%;
+    height: 150px;
+  }
+  .about-me {
+    margin: 30px 25px;
+  }
+  #profile {
+    height: 150px;
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .name {
+    font-size: 1.7em;
+  }
+  .title {
+    font-size: 0.9em;
+    letter-spacing: 0;
+  }
+  .work {
+    justify-content: center;
+  }
+  #middle {
+    margin: 0 10px 0 0;
+  }
+  header {
+    height: 15vh;
+  }
+  #profile {
+    margin-right: 0;
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .container {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .name {
+    font-size: 1.5em;
+  }
+  .title {
+    font-size: 0.8em;
+  }
+  h3 {
+    font-size: 20px;
+  }
+  i {
+    font-size: 16px;
+  }
+  .footer-font {
+    font-size: 14px;
+  }
+  .fa-envelope {
+    font-size: 16px;
+  }
+  .right {
+    height: 200px;
+    flex-basis: 100%;
+    margin: 10px 0;
+  }
+  header,
+  footer,
+  .about {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .name {
+    font-size: 1em;
+  }
+  .title {
+    font-size: 0.6em;
+  }
+  header {
+    align-items: flex-end;
+    height: 14vh;
+  }
+  .logo {
+    align-self: flex-end;
+    margin-bottom: 8px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .blue-box,
+  .lightblue-box,
+  .green-box{
+    width: 50px;
+    height: 50px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .project-title {
+    font-size: 22px;
+  }
+  .project-link {
+    font-size: 10px;
+  }
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+  #logo-icon {
+    height: 100%;
+    width: 100%;
+  }
+}
